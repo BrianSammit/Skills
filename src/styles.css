@@ -43,6 +43,13 @@ nav a {
   margin: auto;
 }
 
+.card-skills {
+  padding: 15px;
+  margin: 5% auto;
+  width: 600px;
+  box-shadow: 3px 3px #606166, -1em 0 .4em hsl(66 70% 54%);
+}
+
 .image-pro {
   width: 250px;
   height: 250px;
@@ -58,6 +65,16 @@ nav a {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+.user-name {
+  color: white;
+  margin: 3%;
+}
+
+.user-skills-interests {
+  color: white;
+  margin: 1%;
+}
+
 .skills-container {
   margin: auto;
   width: 50%;
@@ -70,6 +87,6 @@ nav a {
   color: #c6c9d0;
   background: #373a41;
   margin: 10px;
-  padding: 10px 15px ;
+  padding: 10px 15px;
   border-radius: 25px;
 }
