@@ -7,7 +7,7 @@ const element = <FontAwesomeIcon icon={faBars} />;
 const Navbar = () => (
   <nav>
     <div>
-      <div>{element}</div>
+      <div className="icon-bur">{element}</div>
       <h1>torre</h1>
     </div>
     <div>

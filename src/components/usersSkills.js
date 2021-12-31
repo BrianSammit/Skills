@@ -1,11 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import searchUser from '../api';
 
 const { useState } = React;
-
-const searchIcon = <FontAwesomeIcon icon={faSearch} />;
 
 const UsersSkills = () => {
   const [search, setSearch] = useState('');
@@ -15,23 +11,23 @@ const UsersSkills = () => {
     setSearch(e.target.value);
   };
 
-  const onClick = async () => {
-    const data = await searchUser(search);
-    setUser(data);
+  const handleKeyPress = async (event) => {
+    if (event.key === 'Enter') {
+      const data = await searchUser(search);
+      setUser(data);
+    }
   };
 
   return (
     <div className="users-main">
       <div className="search">
-        <div>
-          <input placeholder="Search" onChange={onChange} />
-        </div>
-        <div>
-          <button type="button" onClick={onClick}>
-            Search
-            {searchIcon}
-          </button>
-        </div>
+        <input
+          type="text"
+          name="search"
+          placeholder="Search"
+          onChange={onChange}
+          onKeyPress={handleKeyPress}
+        />
       </div>
       <div className="card-skills">
         {user && (
