@@ -39,7 +39,13 @@ const UsersSkills = () => {
             <div className="border-img">
               <img className="image-pro" alt="profile pic" src={user.person.picture} />
             </div>
-            <div>{user.strengths.map((e) => e.name)}</div>
+            <div className="skills-container">
+              {user.strengths.map((e) => (
+                <div className="skills" key={e.id}>
+                  {e.name}
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>

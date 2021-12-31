@@ -5,6 +5,7 @@
 
 .App {
   text-align: center;
+  background-color: #28292d;
 }
 
 nav {
@@ -55,4 +56,20 @@ nav a {
   padding: 5px;
   background-color: #606166;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.skills-container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills {
+  color: #c6c9d0;
+  background: #373a41;
+  margin: 10px;
+  padding: 10px 15px ;
+  border-radius: 25px;
 }
