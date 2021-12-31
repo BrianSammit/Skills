@@ -27,6 +27,10 @@ This is a samll app wher you can search for a specific user from the app Terro t
 - Run `npm start`.
 - Open your browser and copy paste http://localhost:3000.
 
+## NOTE
+
+If you got problems with CORPS just install this [extentions](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc)
+
 ## Author
 
 👤 **Brian Cruz**
