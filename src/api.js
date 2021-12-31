@@ -1,8 +1,12 @@
-export const searchUser = async (user) => {
+const searchUser = async (user) => {
   try {
-    let url = `https://bio.torre.co/api/bios/${user}`;
+    const url = `https://bio.torre.co/api/bios/${user}`;
     const response = await fetch(url);
     const data = await response.json();
     return data;
-  } catch (error) {}
+  } catch (error) {
+    throw new Error('Error');
+  }
 };
+
+export default searchUser;
