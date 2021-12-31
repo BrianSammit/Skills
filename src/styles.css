@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #28292d;
+}
+
+nav {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28292d;
+  color: white;
+  border-bottom: solid white 1px;
+}
+
+nav h1,
+.icon-bur,
+nav a {
+  cursor: pointer;
+}
+
+nav a {
+  margin-left: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+nav h1:hover,
+.icon-bur:hover,
+nav a:hover {
+  color: hsl(66 70% 54%);
+}
+
+nav div {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.users-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #28292d;
+}
+
+.search {
+  padding: 15px;
+  display: flex;
+  margin: 2% auto;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text] {
+  width: 130px;
+  color: white;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #28292d;
+  background-image: url('../search.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.icon-search {
+  margin: 0 15px;
+  color: #c6c9d0;
+}
+
+.card-skills {
+  padding: 15px;
+  margin: 5% auto;
+  width: 600px;
+  box-shadow: 3px 3px #606166, -1em 0 0.4em hsl(66 70% 54%);
+}
+
+.image-pro {
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.border-img {
+  margin: auto;
+  width: 255px;
+  height: 250px;
+  padding: 5px;
+  background-color: #606166;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.user-name {
+  color: white;
+  margin: 3%;
+}
+
+.user-skills-interests {
+  color: white;
+  margin: 1%;
+}
+
+.skills-container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills {
+  color: #c6c9d0;
+  background: #373a41;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
