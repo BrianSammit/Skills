@@ -18,7 +18,6 @@ const Searchbar = () => {
   const onClick = async () => {
     const data = await searchUser(search);
     setUser(data);
-    console.log(data);
   };
 
   return (
@@ -36,11 +35,7 @@ const Searchbar = () => {
         {user && (
           <div>
             <img alt="profile pic" src={user.person.picture} />
-            <div>
-              {user.strengths.map((e) => {
-                <div>{e}</div>;
-              })}
-            </div>
+            <div>{user.strengths.map((e) => e.name)}</div>
           </div>
         )}
       </div>
