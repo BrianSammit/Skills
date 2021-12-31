@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.css';
 import Navbar from './components/Navbar';
-import Searchbar from './components/Searchbar';
+import UsersSkills from './components/usersSkills';
 
 export default function App() {
   return (
     <div>
       <Navbar />
-      <Searchbar />
+      <UsersSkills />
     </div>
   );
 }

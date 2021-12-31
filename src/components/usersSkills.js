@@ -7,7 +7,7 @@ const { useState } = React;
 
 const searchIcon = <FontAwesomeIcon icon={faSearch} />;
 
-const Searchbar = () => {
+const UsersSkills = () => {
   const [search, setSearch] = useState('');
   const [user, setUser] = useState();
 
@@ -21,20 +21,24 @@ const Searchbar = () => {
   };
 
   return (
-    <div>
-      <div>
-        <input placeholder="Search" onChange={onChange} />
-      </div>
-      <div>
-        <button type="button" onClick={onClick}>
-          Search
-          {searchIcon}
-        </button>
+    <div className="users-main">
+      <div className="search">
+        <div>
+          <input placeholder="Search" onChange={onChange} />
+        </div>
+        <div>
+          <button type="button" onClick={onClick}>
+            Search
+            {searchIcon}
+          </button>
+        </div>
       </div>
       <div>
         {user && (
           <div>
-            <img alt="profile pic" src={user.person.picture} />
+            <div className="border-img">
+              <img className="image-pro" alt="profile pic" src={user.person.picture} />
+            </div>
             <div>{user.strengths.map((e) => e.name)}</div>
           </div>
         )}
@@ -43,4 +47,4 @@ const Searchbar = () => {
   );
 };
 
-export default Searchbar;
+export default UsersSkills;
